@@ -8,8 +8,7 @@ const Charts = lazy(() => import('../pages/Charts'))
 const Buttons = lazy(() => import('../pages/Buttons'))
 const Modals = lazy(() => import('../pages/Modals'))
 const Tables = lazy(() => import('../pages/Tables'))
-const Page404 = lazy(() => import('../pages/404'))
-const Blank = lazy(() => import('../pages/Blank'))
+
 
 /**
  * ⚠ These are internal routes!
@@ -49,15 +48,8 @@ const routes = [
   {
     path: '/tables',
     component: Tables,
-  },
-  {
-    path: '/404',
-    component: Page404,
-  },
-  {
-    path: '/blank',
-    component: Blank,
-  },
+  }
+ 
 ]
 
 export default routes

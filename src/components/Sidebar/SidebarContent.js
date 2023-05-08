@@ -4,18 +4,11 @@ import { secondaryroutes } from '../../routes/sidebar'
 import { NavLink, Route } from 'react-router-dom'
 import * as Icons from '../../icons'
 import {
-  SearchIcon,
-  MoonIcon,
-  SunIcon,
-  BellIcon,
-  MenuIcon,
-  OutlinePersonIcon,
-  OutlineCogIcon,
+  
   OutlineLogoutIcon,
   SettingsIcon,
 } from '../../icons/index'
 import SidebarSubmenu from './SidebarSubmenu'
-import { Button } from '@windmill/react-ui'
 import SecondarySidemenu from './SecondarySidemenu'
 
 function Icon({ icon, ...props }) {

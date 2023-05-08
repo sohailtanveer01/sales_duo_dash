@@ -55,7 +55,6 @@ function Dashboard() {
     <>
       <PageTitle>Dashboard</PageTitle>
 
-      {/* <CTA /> */}
 
       {/* <PageTitle>Charts</PageTitle> */}
       <div className="grid gap-6 mb-8 md:grid-cols-2">

@@ -2,8 +2,6 @@ import React, { useContext, useState } from 'react'
 import { SidebarContext } from '../context/SidebarContext'
 import {
   SearchIcon,
-  MoonIcon,
-  SunIcon,
   BellIcon,
   MenuIcon,
   OutlinePersonIcon,
@@ -11,11 +9,10 @@ import {
   OutlineLogoutIcon,
   SettingsIcon,
 } from '../icons'
-import { Avatar, Badge, Input, Dropdown, DropdownItem, WindmillContext } from '@windmill/react-ui'
+import { Avatar, Badge, Input, Dropdown, DropdownItem} from '@windmill/react-ui'
 
 
 function Header() {
-  const { mode, toggleMode } = useContext(WindmillContext)
   const { toggleSidebar } = useContext(SidebarContext)
 
   const [isNotificationsMenuOpen, setIsNotificationsMenuOpen] = useState(false)
@@ -55,7 +52,7 @@ function Header() {
         </div>
         <ul className="flex items-center flex-shrink-0 space-x-6">
           {/* <!-- Theme toggler --> */}
-          <li className="flex">
+          {/* <li className="flex">
             <button
               className="rounded-md focus:outline-none focus:shadow-outline-blue"
               onClick={toggleMode}
@@ -67,7 +64,7 @@ function Header() {
                 <MoonIcon className="w-5 h-5" aria-hidden="true" />
               )}
             </button>
-          </li>
+          </li> */}
           {/* <!-- Notifications menu --> */}
           <SettingsIcon className="w-5 h-5 " aria-hidden="true" />
           <li className="relative">
